@@ -4,7 +4,7 @@ from .models import Car, Manufacturer
 from .forms import CarForm, ManufacturerForm
 
 
-class ManufacturerCreateView(CreateView):  #  Garanta que não haja comentário indevido aqui ou adicione 2 espaços se houver
+class ManufacturerCreateView(CreateView):
     model = Manufacturer
     form_class = ManufacturerForm
     template_name = "taxi/manufacturer_form.html"
@@ -21,7 +21,7 @@ class ManufacturerUpdateView(UpdateView):
 class ManufacturerDeleteView(DeleteView):
     model = Manufacturer
     template_name = "taxi/manufacturer_confirm_delete.html"
-    success_url = reverse_lazy("taxi:manufacturer-list")  # Verifique se esta linha está muito longa (talvez não precise quebrar)
+    success_url = reverse_lazy("taxi:manufacturer-list")
 
 
 class CarCreateView(CreateView):
