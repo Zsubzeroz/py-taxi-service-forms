@@ -44,9 +44,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "taxi",
-    # ADICIONAR CRISPY FORMS
     "crispy_forms",
-    "crispy_bootstrap4", # << Adicionado para resolver o aviso
+    "crispy_bootstrap4",
 ]
 
 MIDDLEWARE = [
@@ -95,6 +94,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
+# ...
 AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
