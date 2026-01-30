@@ -7,7 +7,6 @@ from .views import (
     DriverListView,
     DriverDetailView,
     ManufacturerListView,
-    # NOVAS IMPORTS
     ManufacturerCreateView,
     ManufacturerUpdateView,
     ManufacturerDeleteView,
